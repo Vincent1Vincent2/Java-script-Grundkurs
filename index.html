@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1 id="heroTitle" class="heroTitle">Jobas World</h1>
+    <button onclick="changetxt()">Change the world</button>
+    <button onclick="favColorButton()">
+      Log your favorite color in the console
+    </button>
+    <div id="colorBoxOne"></div>
+    <button onclick="colorChange()">START THE PRATY!</button>
+    <div id="colorBoxTwo"></div>
+    <button onclick="colorChangeTwo()">START THE PARTY: PART 2</button>
+    <button onclick="displayUserInfo()">Click to input your details</button>
+    <button type="button" data-theme-toggle aria-label="light/darkmode">
+      Light/Darkmode
+    </button>
+
+    <div
+      onmouseenter="dropShadowHover()"
+      onmouseleave="dropShadowLeave()"
+      onclick="boxSizeChange()"
+      class="box"
+    ></div>
+    <script src="app.js"></script>
+  </body>
+</html>
