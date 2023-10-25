@@ -142,9 +142,8 @@ let currentThemeSetting = calculateSettingAsThemeString({
 updateButton({ buttonEl: button, isDark: currentThemeSetting === "dark" });
 updateThemeOnHtmlEl({ theme: currentThemeSetting });
 
-/**
- * 4. Add an event listener to toggle the theme
- */
+// 4. Add an event listener to toggle the theme
+
 button.addEventListener("click", (event) => {
   const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
 
@@ -160,21 +159,31 @@ button.addEventListener("click", (event) => {
 //   document.querySelector(".box").style.width = "200px";
 // }
 
-function boxSizeChange() {
-  const boxSize = document.querySelector(".box");
-  if (boxSize.style.height == "") boxSize.style.height = "200px";
-  else boxSize.style.height = "";
+// function boxSizeChange() {
+//   const boxSize = document.querySelector(".box");
+//   if (boxSize.style.height == "") boxSize.style.height = "200px";
+//   else boxSize.style.height = "";
 
-  if (boxSize.style.width == "") boxSize.style.width = "200px";
-  else boxSize.style.width = "";
-}
+//   if (boxSize.style.width == "") boxSize.style.width = "200px";
+//   else boxSize.style.width = "";
+// }
 
-function dropShadowHover() {
-  const dropShadow = document.querySelector(".box");
-  dropShadow.style.boxShadow = "10px 20px 30px black";
-}
+// function dropShadowHover() {
+//   const dropShadow = document.querySelector(".box");
+//   dropShadow.style.boxShadow = "10px 20px 30px black";
+// }
 
-function dropShadowLeave() {
-  const dropShadow = document.querySelector(".box");
-  dropShadow.style.boxShadow = "";
-}
+// function dropShadowLeave() {
+//   const dropShadow = document.querySelector(".box");
+//   dropShadow.style.boxShadow = "";
+// }
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".navMenu");
+const body = document.querySelector("body");
+
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+  body.classList.toggle("active");
+});
