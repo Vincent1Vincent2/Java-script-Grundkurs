@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 [data-theme="light"] {
@@ -65,15 +66,13 @@ header {
 }
 
 .darkModeBtn {
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
+  font-size: clamp(20px, 5vw, 2rem);
   transition: all var(--global-transition-time) ease-in-out;
-  border-radius: 2rem;
   cursor: pointer;
-  color: var(--color-fg);
-  background-color: var(--color-bg);
+  color: var(--color-bg);
+  background-color: transparent;
   border: none;
+  border-bottom: solid;
 }
 
 .hamburger {
@@ -103,7 +102,7 @@ main {
 
 .heroTitle,
 .accentColor {
-  font-size: clamp(6.125rem, -4.6875rem + 25vw, 9.375rem);
+  font-size: clamp(5.125rem, -4.6875rem + 25vw, 9.375rem);
 }
 
 .accentColor {
@@ -152,17 +151,12 @@ main {
   }
 
   .darkModeBtn {
-    font-size: 1rem;
-
     margin: 0;
     font-weight: normal;
     transition: all var(--global-transition-time) ease-in-out;
-    border-radius: 2rem;
     cursor: pointer;
     color: var(--color-fg);
-    background-color: var(--color-bg);
-    border: none;
-    margin: 0px 15px;
+    margin: 0px 25px;
   }
 }
 

@@ -94,7 +94,7 @@ function calculateSettingAsThemeString({
 }
 
 function updateButton({ buttonEl, isDark }) {
-  const newCta = isDark ? "Light mode" : "Dark mode";
+  const newCta = isDark ? "LIGHT MODE" : "DARK MODE";
 
   buttonEl.setAttribute("aria-label", newCta);
   buttonEl.innerText = newCta;
