@@ -91,12 +91,19 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
+/* .line {
+  height: 5px;
+  width: 100%;
+  background-color: #0205cc;
+} */
+
 main {
   padding: 1rem 2rem;
 }
 
-.heroTitle {
-  font-size: clamp(50px, 30vh, 15rem);
+.heroTitle,
+.accentColor {
+  font-size: clamp(6.125rem, -4.6875rem + 25vw, 9.375rem);
 }
 
 .accentColor {
