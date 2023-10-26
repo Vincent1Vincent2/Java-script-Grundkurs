@@ -28,16 +28,16 @@
 
 // fullName();
 
-// function changetxt() {
-//   document.getElementById("heroTitle").innerText = "This is Vincents World";
-// }
+function changetxt() {
+  document.getElementById("heroTitle").innerText = "This is Vincents World";
+}
 
-// function colorChange() {
-//   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-//   document.getElementById("colorBoxOne").style.backgroundColor =
-//     "#" + randomColor;
-//   color = "#" + randomColor;
-// }
+function colorChange() {
+  const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  document.getElementById("colorBoxOne").style.backgroundColor =
+    "#" + randomColor;
+  color.innerHTML = "#" + randomColor;
+}
 
 // function colorChangeTwo() {
 //   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
