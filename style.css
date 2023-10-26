@@ -7,11 +7,15 @@
 [data-theme="light"] {
   --color-bg: #ffffff;
   --color-fg: #000000;
+  --color-ac: #0205cc;
+  --color-sec: #f0f0f0;
 }
 
 [data-theme="dark"] {
   --color-bg: #000000;
   --color-fg: #ffffff;
+  --color-ac: #0205cc;
+  --color-sec: #0c0c0c;
 }
 
 body {
@@ -56,6 +60,10 @@ header {
   font-size: clamp(20px, 5vw, 2rem);
 }
 
+.navLink:hover {
+  color: var(--color-ac);
+}
+
 .darkModeBtn {
   font-size: 1rem;
   font-weight: bold;
@@ -81,6 +89,27 @@ header {
   background-color: var(--color-bg);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+main {
+  padding: 1rem 2rem;
+}
+
+.heroTitle {
+  font-size: clamp(50px, 30vh, 15rem);
+}
+
+.accentColor {
+  color: var(--color-ac);
+}
+
+.heroDesc {
+  font-size: clamp(25px, 15vh, 15rem);
+}
+
+.exerciseSection {
+  height: 80vh;
+  background-color: var(--color-sec);
 }
 
 @media (max-width: 768px) {
