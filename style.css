@@ -117,10 +117,6 @@ main {
   color: var(--color-ac);
 }
 
-.heroDesc {
-  font-size: clamp(25px, 15vh, 15rem);
-}
-
 .exerciseSection {
   background-color: var(--color-sec);
   padding: 2rem;
@@ -239,9 +235,44 @@ body.active {
   overflow: hidden;
 }
 
-/* div {
-  background-color: rgba(144, 238, 144, 0.466);
-  width: 250px;
-  height: 250px;
-  margin: 1rem 0rem;
-} */
+/* Game section */
+
+.gameSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.gameBox {
+  width: 50vw;
+  background-color: #0205cc;
+  padding: 0 7rem;
+  padding-bottom: 7rem;
+  padding-top: 2rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px var(--color-fg);
+}
+
+#questText {
+  font-size: clamp(2.2rem, -5.6875rem + 10vw, 3.25rem);
+  margin-bottom: 3rem;
+  color: var(--color-bg);
+}
+
+.buttonGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+
+.gameBtn {
+  font-size: clamp(2.2rem, -5.6875rem + 10vw, 3.25rem);
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  border: none;
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
+}

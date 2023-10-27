@@ -38,29 +38,39 @@
       </nav>
     </header>
     <div class="line"></div>
-    <body>
-      <main>
-        <h1 class="heroTitle">
-          I do a lil
-          <p class="accentColor">Javascript</p>
-          testing!
-        </h1>
-      </main>
-      <section id="colorBoxOne" class="exerciseSection">
-        <div class="excercise">
-          <button id="btn" class="btn" onclick="colorChange()">
-            CHOOSE A PARTY COLOR!
-          </button>
-          <span class="text"
-            >CURRENT PARTY COLOR IS: <span class="text" id="color"></span
-          ></span>
+    <main>
+      <h1 class="heroTitle">
+        I do a lil
+        <p class="accentColor">Javascript</p>
+        testing!
+      </h1>
+    </main>
+    <section id="colorBoxOne" class="exerciseSection">
+      <div class="excercise">
+        <button id="btn" class="btn" onclick="colorChange()">
+          CHOOSE A PARTY COLOR!
+        </button>
+        <span class="text"
+          >CURRENT PARTY COLOR IS: <span class="text" id="color"></span
+        ></span>
+      </div>
+      <div class="excercise">
+        <div id="heroTitle" class="heroTitle worldTitle">Jonas World</div>
+        <button id="worldTxt" class="btn">Change the world</button>
+      </div>
+    </section>
+    <section class="gameSection">
+      <div class="gameBox">
+        <div id="questText">text</div>
+        <div id="optionButtons" class="buttonGrid">
+          <button class="gameBtn">Option 1</button>
+          <button class="gameBtn">Option 2</button>
+          <button class="gameBtn">Option 3</button>
+          <button class="gameBtn">Option 4</button>
         </div>
-        <div class="excercise">
-          <div id="heroTitle" class="heroTitle worldTitle">Jonas World</div>
-          <button id="worldTxt" class="btn">Change the world</button>
-        </div>
-      </section>
-    </body>
+      </div>
+    </section>
     <script src="app.js"></script>
+    <script src="game.js"></script>
   </body>
 </html>
