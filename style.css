@@ -31,7 +31,11 @@ header {
 .logo {
   text-decoration: none;
   color: var(--color-bg);
-  font-size: clamp(5.125rem, -4.6875rem + 25vw, 10rem);
+  font-size: clamp(3rem, -4.6875rem + 25vw, 6rem);
+}
+
+.logo:hover {
+  color: var(--color-fg);
 }
 
 .navBar {
@@ -58,7 +62,7 @@ header {
 .navLink {
   text-decoration: none;
   color: var(--color-bg);
-  font-size: clamp(20px, 5vw, 2rem);
+  font-size: clamp(40px, 5vw, 2rem);
 }
 
 .navLink:hover {
@@ -66,13 +70,17 @@ header {
 }
 
 .darkModeBtn {
-  font-size: clamp(20px, 5vw, 2rem);
+  font-size: clamp(40px, 5vw, 2rem);
   transition: all var(--global-transition-time) ease-in-out;
   cursor: pointer;
   color: var(--color-bg);
   background-color: transparent;
   border: none;
   border-bottom: solid;
+}
+
+.darkModeBtn:hover {
+  color: var(--color-fg);
 }
 
 .hamburger {
@@ -102,7 +110,7 @@ main {
 
 .heroTitle,
 .accentColor {
-  font-size: clamp(5.125rem, -4.6875rem + 25vw, 13rem);
+  font-size: clamp(4.2rem, -4.6875rem + 25vw, 12.25rem);
 }
 
 .accentColor {
@@ -131,7 +139,7 @@ main {
 }
 
 .excercise:nth-child(2) {
-  height: 50vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -140,7 +148,7 @@ main {
 }
 
 .btn:nth-child(2) {
-  width: 200px;
+  width: 250px;
 }
 
 .btn {
@@ -181,7 +189,7 @@ main {
   .navMenu {
     position: fixed;
     left: -150%;
-    top: 150px;
+    top: 97px;
     width: 100vw;
     transition: 0.3s;
     height: 100vh;
@@ -206,10 +214,11 @@ main {
   }
 
   main {
-    height: 85vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
   }
 
   .excercise:nth-child(1) {
