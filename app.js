@@ -8,7 +8,7 @@ function colorChange() {
   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
   document.getElementById("colorBoxOne").style.backgroundColor =
     "#" + randomColor;
-  color.innerHTML = "#" + randomColor;
+  color.innerHTML = "#" + randomColor.toUpperCase();
 }
 
 //Darkmode
@@ -71,13 +71,36 @@ hamburger.addEventListener("click", function () {
   body.classList.toggle("active");
 });
 
-const btn = document.getElementById("btn");
-
 // btn.addEventListener("click", function () {
-//   const addBrand = prompt(
-//     "Write a car brand name but not VOLVO, SAAB, PORSCHE, BUGGATI"
+//   const carBrands = [
+//     "Volvo",
+//     " ",
+//     "Audi",
+//     " ",
+//     "BMW",
+//     " ",
+//     "Saab",
+//     " ",
+//     "Porsche",
+//   ];
+//   const favbrand = prompt(
+//     "Write whats your favorite car brand of " + carBrands
 //   );
-//   carBrands.pop();
-//   carBrands.push(addBrand);
-//   console.log(carBrands);
+//   if (carBrands.includes(favbrand)) {
+//     console.log(`${favbrand}`);
+//   } else {
+//     alert("Click again and chooes a car from the list list");
+//   }
 // });
+
+// const carBrands = ["Volvo", "Audi", "BMW", "Saab", "Porsche"];
+// const carListContainer = document.getElementById("carListContainer");
+
+// let carBrandList = document.createElement("ul");
+// carListContainer.appendChild(carBrandList);
+
+// for (let carBrand of carBrands) {
+//   let carBrandItem = document.createElement("li");
+//   carBrandList.appendChild(carBrandItem);
+//   carBrandItem.textContent = carBrand;
+// }
