@@ -46,17 +46,66 @@ const optionTexts = [
       {
         text: "Go right",
         setState: { right: false },
-        nextText: 2,
+        nextText: 3,
       },
       {
         text: "Go up",
         setState: { up: true },
-        nextText: 3,
+        nextText: 4,
       },
       {
         text: "Go back",
         setState: { back: false },
-        nextText: 2,
+        nextText: 5,
+      },
+    ],
+  },
+  {
+    id: 2,
+    text: "You cant go here yet you need the red key",
+    options: [
+      {
+        text: "Go back",
+        setState: { back: true },
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 3,
+    text: "You can't go here yet, you need the blue key",
+    options: [
+      {
+        text: "Go back",
+        setState: { back: true },
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 4,
+    text: "You've enterd a small room with a piano and a desk, you open a drawer and find a blue key",
+    options: [
+      {
+        text: "Take blue key",
+        setState: { blueKey: true },
+        nextText: 6,
+      },
+      {
+        text: "Leave the blue key",
+        setState: { blueKey: false },
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 5,
+    text: "This door leads out but you need a green key to open it",
+    options: [
+      {
+        text: "Go back",
+        setState: { back: true },
+        nextText: 1,
       },
     ],
   },
