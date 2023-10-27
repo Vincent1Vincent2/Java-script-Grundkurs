@@ -248,7 +248,7 @@ body.active {
 
 .gameBox {
   width: 50vw;
-  background-color: #0205cc;
+  background-color: var(--color-sec);
   padding: 0 7rem;
   padding-bottom: 7rem;
   padding-top: 2rem;
@@ -259,7 +259,7 @@ body.active {
 #questText {
   font-size: clamp(2.2rem, -5.6875rem + 10vw, 3.25rem);
   margin-bottom: 3rem;
-  color: var(--color-bg);
+  color: var(--color-fg);
 }
 
 .buttonGrid {
