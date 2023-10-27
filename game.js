@@ -13,6 +13,22 @@ function showQuestText(textIndex) {
     (optionText) => optionText.id === textIndex
   );
   questText.innerText = optionText.text;
+  while (optionsButtonsContainer.firstChild) {
+    optionsButtonsContainer.removeChild(optionsButtonsContainer.firstChild);
+  }
+  optionText.options.forEach((option) => {
+    if (showOption(option)) {
+      const button = document.createElement("button");
+      button.innerText = option.text;
+      button.classList.add("gameBtn");
+      button.addEventListener("click", () => selectOption(option));
+      optionsButtonsContainer.appendChild(button);
+    }
+  });
+}
+
+function showOption(option) {
+  return true;
 }
 
 function selectOption(option) {}
