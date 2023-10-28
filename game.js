@@ -267,7 +267,7 @@ const optionTexts = [
     options: [
       {
         text: "Go back",
-        nextText: 3,
+        nextText: 2,
       },
     ],
   },
@@ -431,11 +431,11 @@ const optionTexts = [
       },
       {
         text: "Blue door",
-        nextText: 31,
+        nextText: 39,
       },
       {
         text: "Green door",
-        nextText: 31,
+        nextText: 0 / 31,
       },
     ],
   },
@@ -469,7 +469,7 @@ const optionTexts = [
     options: [
       {
         text: "Blue door",
-        nextText: 0,
+        nextText: 37,
       },
       {
         text: "Green door",
@@ -480,6 +480,234 @@ const optionTexts = [
   {
     id: 36,
     text: "Oh wow, the smell of freedome, i made it out!",
+    options: [
+      {
+        text: "Restart",
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 37,
+    text: "Oh look a red key but i dont need it.",
+    options: [
+      {
+        text: "Go back",
+        nextText: 38,
+      },
+    ],
+  },
+  {
+    id: 38,
+    text: "Now there is just one door left",
+    options: [
+      {
+        text: "Green door",
+        nextText: 36,
+      },
+    ],
+  },
+  {
+    id: 39,
+    text: "I should really use the key here",
+    options: [
+      {
+        text: "Use lockpick",
+        nextText: 40,
+      },
+      {
+        text: "Use blue key",
+        nextText: 45,
+      },
+      {
+        text: "Go back",
+        nextText: 32,
+      },
+    ],
+  },
+  {
+    id: 40,
+    text: "Ok... at leats the door is open and i found a red key!",
+    options: [
+      {
+        text: "Go back",
+        nextText: 41,
+      },
+    ],
+  },
+  {
+    id: 41,
+    text: "Only two doors left, i got a blue and red key now",
+    options: [
+      {
+        text: "Red door",
+        nextText: 42,
+      },
+      {
+        text: "Green door",
+        nextText: 0 / 41,
+      },
+    ],
+  },
+  {
+    id: 42,
+    text: "Wow look at that, the key fits, and on the floor. A green key!",
+    options: [
+      {
+        text: "Go back",
+        nextText: 43,
+      },
+    ],
+  },
+  {
+    id: 43,
+    text: "I should be close to getting out now",
+    options: [
+      {
+        text: "Green door",
+        nextText: 44,
+      },
+    ],
+  },
+  {
+    id: 44,
+    text: "I made it!",
+    options: [
+      {
+        text: "Restart",
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 45,
+    text: "Nice! There's a red key there!",
+    options: [
+      {
+        text: "Go back",
+        nextText: 46,
+      },
+    ],
+  },
+  {
+    id: 46,
+    text: "Still got that lockpick but also a new red key.. wonder witch to use",
+    options: [
+      {
+        text: "Red door",
+        nextText: 47,
+      },
+      {
+        text: "Green door",
+        nextText: 52,
+      },
+    ],
+  },
+  {
+    id: 47,
+    text: "Hmmm key or lock pick? ",
+    options: [
+      {
+        text: "Use red key",
+        nextText: 48,
+      },
+      {
+        text: "Use lockpick",
+        nextText: 54,
+      },
+    ],
+  },
+  {
+    id: 48,
+    text: "Key it is and look a green key!",
+    options: [
+      {
+        text: "Go back",
+        nextText: 49,
+      },
+    ],
+  },
+  {
+    id: 49,
+    text: "Now just one door left!",
+    options: [
+      {
+        text: "Green door",
+        nextText: 50,
+      },
+    ],
+  },
+  {
+    id: 50,
+    text: "What should i use now?",
+    options: [
+      {
+        text: "Use green key",
+        nextText: 51,
+      },
+      {
+        text: "Use lockpick",
+        nextText: 51,
+      },
+    ],
+  },
+  {
+    id: 51,
+    text: "That took some time but finally, im out!",
+    options: [
+      {
+        text: "Restart",
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 52,
+    text: "The red key don't fit but i could use a the lookpick",
+    options: [
+      {
+        text: "Use lookpick",
+        nextText: 53,
+      },
+      {
+        text: "Go back",
+        nextText: 46,
+      },
+    ],
+  },
+  {
+    id: 53,
+    text: "Wow i made it out!",
+    options: [
+      {
+        text: "Restart",
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 54,
+    text: "Got it open! And theres a green key! ",
+    options: [
+      {
+        text: "Go back",
+        nextText: 55,
+      },
+    ],
+  },
+  {
+    id: 55,
+    text: "Now i just got the green door left!",
+    options: [
+      {
+        text: "Green door",
+        nextText: 56,
+      },
+    ],
+  },
+  {
+    id: 56,
+    text: "And just like that i made it",
     options: [
       {
         text: "Restart",
