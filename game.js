@@ -52,7 +52,6 @@ const optionTexts = [
       },
       {
         text: "The gray room",
-        setState: { blueKey: true },
         nextText: 2,
       },
       {
@@ -755,7 +754,7 @@ const optionTexts = [
     options: [
       {
         text: "Go back",
-        nextText: 61,
+        nextText: 3,
       },
     ],
   },
