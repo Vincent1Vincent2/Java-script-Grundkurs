@@ -44,11 +44,11 @@ const optionTexts = [
     options: [
       {
         text: "The red room",
-        nextText: 0,
+        nextText: 64,
       },
       {
         text: "The blue room",
-        nextText: 0,
+        nextText: 65,
       },
       {
         text: "The gray room",
@@ -57,7 +57,7 @@ const optionTexts = [
       },
       {
         text: "The Green room",
-        nextText: 0,
+        nextText: 66,
       },
     ],
   },
@@ -89,11 +89,11 @@ const optionTexts = [
       },
       {
         text: "Check piano",
-        nextText: 0,
+        nextText: 60,
       },
       {
         text: "Check the desk",
-        nextText: 0,
+        nextText: 61,
       },
     ],
   },
@@ -435,7 +435,7 @@ const optionTexts = [
       },
       {
         text: "Green door",
-        nextText: 0 / 31,
+        nextText: 58,
       },
     ],
   },
@@ -545,7 +545,7 @@ const optionTexts = [
       },
       {
         text: "Green door",
-        nextText: 0 / 41,
+        nextText: 57,
       },
     ],
   },
@@ -605,7 +605,7 @@ const optionTexts = [
   },
   {
     id: 47,
-    text: "Hmmm key or lock pick? ",
+    text: "Hmmm key or lockpick? ",
     options: [
       {
         text: "Use red key",
@@ -711,6 +711,118 @@ const optionTexts = [
     options: [
       {
         text: "Restart",
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 57,
+    text: "I'ts locked and i don't have the green key yet...",
+    options: [
+      {
+        text: "Go back",
+        nextText: 41,
+      },
+    ],
+  },
+  {
+    id: 58,
+    text: "The green door, i could use my lockpick here",
+    options: [
+      {
+        text: "Use lockpick",
+        nextText: 59,
+      },
+      {
+        text: "Go back",
+        nextText: 32,
+      },
+    ],
+  },
+  {
+    id: 59,
+    text: "Sweet i made it out!",
+    options: [
+      {
+        text: "Restart",
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 60,
+    text: "Thats a really nice piano, my dad always played when i was younger",
+    options: [
+      {
+        text: "Go back",
+        nextText: 61,
+      },
+    ],
+  },
+  {
+    id: 61,
+    text: "This is an old oak desk, look in the drawer a blue key!",
+    options: [
+      {
+        text: "Go back",
+        nextText: 62,
+      },
+    ],
+  },
+  {
+    id: 62,
+    text: "This is an old oak desk, look in the drawer a blue key!",
+    options: [
+      {
+        text: "Go back",
+        nextText: 63,
+      },
+    ],
+  },
+  {
+    id: 63,
+    text: "I got both the lockpick and a blue key, where to go now?",
+    options: [
+      {
+        text: "Red door",
+        nextText: 33,
+      },
+      {
+        text: "Blue door",
+        nextText: 39,
+      },
+      {
+        text: "Green door",
+        nextText: 58,
+      },
+    ],
+  },
+  {
+    id: 64,
+    text: "This door is locked, i need the red key to go here",
+    options: [
+      {
+        text: "Go back",
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 65,
+    text: "The door is locked :( i need the blue key",
+    options: [
+      {
+        text: "Go back",
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 66,
+    text: "It seems to be a locked door, i think i need the green key to get in",
+    options: [
+      {
+        text: "Go back",
         nextText: 1,
       },
     ],
