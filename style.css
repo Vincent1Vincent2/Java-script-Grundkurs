@@ -246,6 +246,11 @@ body.active {
   text-align: center;
 }
 
+.gameSectionTitle {
+  font-size: clamp(2.2rem, -5.6875rem + 10vw, 4.25rem);
+  padding: 5rem;
+}
+
 .gameBox {
   width: 50vw;
   background-color: var(--color-sec);
@@ -266,6 +271,7 @@ body.active {
   display: grid;
   grid-template-columns: auto auto;
   gap: 1rem;
+  justify-content: center;
 }
 
 .gameBtn {
