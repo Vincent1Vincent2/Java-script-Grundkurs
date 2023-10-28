@@ -28,84 +28,95 @@ function showQuestText(textIndex) {
 }
 
 function showOption(option) {
-  return true;
+  return option.requierdState == null || option.requierdState(state);
 }
 
-function selectOption(option) {}
+function selectOption(option) {
+  const nextQuestTextId = option.nextText;
+  state = Object.assign(state, option.setState);
+  showQuestText(nextQuestTextId);
+}
 
 const optionTexts = [
   {
     id: 1,
-    text: "You've been looked in a house and need to find the blue and red key to get out",
+    text: "You've been looked in a house and need to find the blue, red and green key to get out",
     options: [
       {
         text: "Go left",
-        setState: { left: false },
         nextText: 2,
       },
       {
         text: "Go right",
-        setState: { right: false },
         nextText: 3,
       },
       {
         text: "Go up",
-        setState: { up: true },
+        setState: { blueKey: true },
         nextText: 4,
       },
       {
         text: "Go back",
-        setState: { back: false },
-        nextText: 5,
       },
     ],
   },
   {
     id: 2,
-    text: "You cant go here yet you need the red key",
+    text: "You need the red key to open this door",
     options: [
       {
         text: "Go back",
-        setState: { back: true },
         nextText: 1,
       },
     ],
   },
   {
     id: 3,
-    text: "You can't go here yet, you need the blue key",
+    text: "You need the blue key to open this door",
     options: [
       {
         text: "Go back",
-        setState: { back: true },
         nextText: 1,
       },
     ],
   },
   {
     id: 4,
-    text: "You've enterd a small room with a piano and a desk, you open a drawer and find a blue key",
+    text: "You enter a small room with a piano, bookshelf and desk",
     options: [
       {
-        text: "Take blue key",
-        setState: { blueKey: true },
+        text: "Check bookshelf",
+        nextText: 5,
+      },
+      {
+        text: "Play the piano",
         nextText: 6,
       },
       {
-        text: "Leave the blue key",
-        setState: { blueKey: false },
-        nextText: 1,
+        text: "Check the desk",
+        nextText: 7,
       },
     ],
   },
   {
     id: 5,
-    text: "This door leads out but you need a green key to open it",
+    text: "It's a wooden bookshelf with a lot of books. And there seems to be a lockpicking kit",
     options: [
       {
+        text: "Take the lockpicking kit",
+        nextText: 6,
+      },
+      {
+        text: "Play the piano",
+        nextText: 6,
+      },
+      {
+        text: "Check the desk",
+        nextText: 7,
+      },
+      {
         text: "Go back",
-        setState: { back: true },
-        nextText: 1,
+        nextText: 8,
       },
     ],
   },
