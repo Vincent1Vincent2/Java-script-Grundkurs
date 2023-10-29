@@ -83,6 +83,10 @@ const optionTexts = [
         text: "Check desk",
         nextText: 19,
       },
+      {
+        text: "Go back",
+        nextText: 1,
+      },
     ],
   },
   {
@@ -269,7 +273,7 @@ const optionTexts = [
   },
   {
     id: 18,
-    text: "To bad i can't play, it looks like a nice piano",
+    text: "Too bad i can't play, it looks like a nice piano",
     options: [
       {
         text: "Go back",
