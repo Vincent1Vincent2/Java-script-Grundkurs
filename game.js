@@ -36,7 +36,7 @@ function selectOption(option) {
 
   showQuestText(nextQuestTextId);
 
-  if (option.text === "Check piano") {
+  if (option.text === "Play piano") {
     const pianoSound = document.getElementById("pianoSound");
     if (pianoSound) {
       pianoSound.play();
@@ -214,6 +214,10 @@ const optionTexts = [
         nextText: 12,
       },
       {
+        text: "Gray door",
+        nextText: 103,
+      },
+      {
         text: "Green door",
         nextText: 15,
       },
@@ -221,7 +225,7 @@ const optionTexts = [
   },
   {
     id: 12,
-    text: "Look at that, i green key! ",
+    text: "Look at that, a green key and a note sheet.",
     options: [
       {
         text: "Go back",
@@ -231,8 +235,12 @@ const optionTexts = [
   },
   {
     id: 13,
-    text: "This gotta go to the green door, right? ",
+    text: "This gotta go to the green door, right?",
     options: [
+      {
+        text: "Gray door",
+        nextText: 105,
+      },
       {
         text: "Green door",
         nextText: 14,
@@ -330,6 +338,10 @@ const optionTexts = [
         nextText: 22,
       },
       {
+        text: "Gray door",
+        nextText: 20,
+      },
+      {
         text: "Green door",
         nextText: 28,
       },
@@ -337,7 +349,7 @@ const optionTexts = [
   },
   {
     id: 22,
-    text: "There on the floor, a red key! ",
+    text: "There on the floor, a red key!",
     options: [
       {
         text: "Go back",
@@ -354,6 +366,10 @@ const optionTexts = [
         nextText: 24,
       },
       {
+        text: "Gray door",
+        nextText: 109,
+      },
+      {
         text: "Green door",
         nextText: 29,
       },
@@ -361,7 +377,7 @@ const optionTexts = [
   },
   {
     id: 24,
-    text: "This is easy, a green key!",
+    text: "This is easy, there's a green key and a note sheet!",
     options: [
       {
         text: "Go back",
@@ -373,6 +389,10 @@ const optionTexts = [
     id: 25,
     text: "Im soon out!",
     options: [
+      {
+        text: "Gray door",
+        nextText: 120,
+      },
       {
         text: "Green door",
         nextText: 26,
@@ -609,11 +629,15 @@ const optionTexts = [
   },
   {
     id: 46,
-    text: "Still got that lockpick but also a new red key.. wonder witch to use",
+    text: "So a lockpick and a red key.. wonder witch to use",
     options: [
       {
         text: "Red door",
         nextText: 47,
+      },
+      {
+        text: "Gray door",
+        nextText: 112,
       },
       {
         text: "Green door",
@@ -637,7 +661,7 @@ const optionTexts = [
   },
   {
     id: 48,
-    text: "Key it is and look a green key!",
+    text: "Look a green key and a note sheet!",
     options: [
       {
         text: "Go back",
@@ -647,8 +671,12 @@ const optionTexts = [
   },
   {
     id: 49,
-    text: "Now just one door left!",
+    text: "Now i got a lockpick, green key and a note sheet.. wow.",
     options: [
+      {
+        text: "Gray door",
+        nextText: 114,
+      },
       {
         text: "Green door",
         nextText: 50,
@@ -705,7 +733,7 @@ const optionTexts = [
   },
   {
     id: 54,
-    text: "Got it open! And theres a green key! ",
+    text: "Got it open! And theres a green key!",
     options: [
       {
         text: "Go back",
@@ -1274,6 +1302,392 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 103,
+    text: "Only the piano left",
+    options: [
+      {
+        text: "Check piano",
+        nextText: 104,
+      },
+    ],
+  },
+  {
+    id: 104,
+    text: "Wish i could play this",
+    options: [
+      {
+        text: "Go back",
+        nextText: 11,
+      },
+    ],
+  },
+  {
+    id: 105,
+    text: "Go the note sheet, now let's check out the piano",
+    options: [
+      {
+        text: "Check piano",
+        nextText: 106,
+      },
+      {
+        text: "Go back",
+        nextText: 13,
+      },
+    ],
+  },
+  {
+    id: 106,
+    text: "Go the note sheet, now let's check out the piano",
+    options: [
+      {
+        text: "Play piano",
+        nextText: 107,
+      },
+      {
+        text: "Go back",
+        nextText: 13,
+      },
+    ],
+  },
+  {
+    id: 107,
+    text: "Now playing: ",
+    options: [
+      {
+        text: "Go back",
+        nextText: 108,
+      },
+    ],
+  },
+  {
+    id: 107,
+    text: "Only one door left",
+    options: [
+      {
+        text: "Green door",
+        nextText: 108,
+      },
+    ],
+  },
+  {
+    id: 108,
+    text: "I made it out",
+    options: [
+      {
+        text: "Restart",
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 109,
+    text: "red key no sheet, no blue",
+    options: [
+      {
+        text: "Check piano",
+        nextText: 110,
+      },
+      {
+        text: "Check bookshelf",
+        nextText: 111,
+      },
+      {
+        text: "Go back",
+        nextText: 23,
+      },
+    ],
+  },
+  {
+    id: 110,
+    text: "This is a nice piano what a shame i can't play",
+    options: [
+      {
+        text: "Go back",
+        nextText: 109,
+      },
+    ],
+  },
+  {
+    id: 111,
+    text: "Oh look a lockpick, this will come in handy",
+    options: [
+      {
+        text: "Go back",
+        nextText: 46,
+      },
+    ],
+  },
+  {
+    id: 112,
+    text: "Just the piano left here",
+    options: [
+      {
+        text: "Check piano",
+        nextText: 113,
+      },
+    ],
+  },
+  {
+    id: 113,
+    text: "Still wish i could play this",
+    options: [
+      {
+        text: "Go back",
+        nextText: 46,
+      },
+    ],
+  },
+  {
+    id: 114,
+    text: "I should check the piano now",
+    options: [
+      {
+        text: "Check piano",
+        nextText: 115,
+      },
+    ],
+  },
+  {
+    id: 115,
+    text: "Let's see if i can follow the note sheet",
+    options: [
+      {
+        text: "Play piano",
+        nextText: 116,
+      },
+    ],
+  },
+  {
+    id: 116,
+    text: "Now playing:",
+    options: [
+      {
+        text: "Go back",
+        nextText: 117,
+      },
+    ],
+  },
+  {
+    id: 117,
+    text: "Both the key and the lockpick.",
+    options: [
+      {
+        text: "Green door",
+        nextText: 118,
+      },
+    ],
+  },
+  {
+    id: 118,
+    text: "Witch to use...",
+    options: [
+      {
+        text: "Use lockpick",
+        nextText: 119,
+      },
+      {
+        text: "Use key",
+        nextText: 119,
+      },
+    ],
+  },
+  {
+    id: 119,
+    text: "I made it! Finally",
+    options: [
+      {
+        text: "Restart",
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 120,
+    text: "I wonder what this room still holds",
+    options: [
+      {
+        text: "Check piano",
+        nextText: 121,
+      },
+      {
+        text: "Check bookshelf",
+        nextText: 126,
+      },
+      {
+        text: "Go back",
+        nextText: 25,
+      },
+    ],
+  },
+  {
+    id: 121,
+    text: "I wonder if i can follow this note sheet",
+    options: [
+      {
+        text: "Play piano",
+        nextText: 122,
+      },
+      {
+        text: "Go back",
+        nextText: 25,
+      },
+    ],
+  },
+  {
+    id: 122,
+    text: "Now playing",
+    options: [
+      {
+        text: "Go back",
+        nextText: 123,
+      },
+    ],
+  },
+  {
+    id: 123,
+    text: "Only the bookshelf left",
+    options: [
+      {
+        text: "Check bookshelf",
+        nextText: 124,
+      },
+      {
+        text: "Go back",
+        nextText: 132,
+      },
+    ],
+  },
+  {
+    id: 124,
+    text: "Oh wow look, a lockpick",
+    options: [
+      {
+        text: "Go back",
+        nextText: 125,
+      },
+    ],
+  },
+  {
+    id: 125,
+    text: "Just one door left",
+    options: [
+      {
+        text: "Green door",
+        nextText: 50,
+      },
+    ],
+  },
+  {
+    id: 126,
+    text: "Oh look a lockpick!",
+    options: [
+      {
+        text: "Go back",
+        nextText: 127,
+      },
+    ],
+  },
+  {
+    id: 127,
+    text: "Only the piano left here now",
+    options: [
+      {
+        text: "Check piano",
+        nextText: 128,
+      },
+      {
+        text: "Go back",
+        nextText: 130,
+      },
+    ],
+  },
+  {
+    id: 128,
+    text: "I could probebly follow the note sheet",
+    options: [
+      {
+        text: "Play piano",
+        nextText: 129,
+      },
+      {
+        text: "Go back",
+        nextText: 130,
+      },
+    ],
+  },
+  {
+    id: 129,
+    text: "Now playing:",
+    options: [
+      {
+        text: "Go back",
+        nextText: 131,
+      },
+    ],
+  },
+  {
+    id: 130,
+    text: "Almost out now",
+    options: [
+      {
+        text: "Gray door",
+        nextText: 127,
+      },
+      {
+        text: "Green door",
+        nextText: 51,
+      },
+    ],
+  },
+  {
+    id: 131,
+    text: "Almost out now",
+    options: [
+      {
+        text: "Green door",
+        nextText: 51,
+      },
+    ],
+  },
+  {
+    id: 132,
+    text: "green key have played no blue",
+    options: [
+      {
+        text: "Gray door",
+        nextText: 133,
+      },
+      {
+        text: "Green door",
+        nextText: 51,
+      },
+    ],
+  },
+  {
+    id: 133,
+    text: "Just the bookshelf left now",
+    options: [
+      {
+        text: "Check bookshelf",
+        nextText: 134,
+      },
+      {
+        text: "Go back",
+        nextText: 132,
+      },
+    ],
+  },
+  {
+    id: 134,
+    text: "Look at that a lockpick, wish i found that erlier",
+    options: [
+      {
+        text: "Go back",
+        nextText: 50,
       },
     ],
   },
