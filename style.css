@@ -10,6 +10,7 @@
   --color-fg: #000000;
   --color-ac: #0205cc;
   --color-sec: #f0f0f0;
+  --color-glass: rgba(255, 255, 255, 0.31);
 }
 
 [data-theme="dark"] {
@@ -168,65 +169,6 @@ main {
   background-color: rgba(93, 103, 255, 0.233);
 }
 
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .navMenu {
-    position: fixed;
-    left: -150%;
-    top: 97px;
-    width: 100vw;
-    transition: 0.3s;
-    height: 100vh;
-    background-color: var(--color-bg);
-  }
-
-  .navItem {
-    margin: 5px 25px;
-  }
-
-  .navLink {
-    color: var(--color-fg);
-  }
-
-  .darkModeBtn {
-    margin: 0;
-    font-weight: normal;
-    transition: all var(--global-transition-time) ease-in-out;
-    cursor: pointer;
-    color: var(--color-fg);
-    margin: 0px 25px;
-  }
-
-  main {
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .excercise:nth-child(1) {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-  .excercise:nth-child(2) {
-    height: 80vh;
-  }
-}
-
 .navMenu.active {
   left: 0;
 }
@@ -281,4 +223,72 @@ body.active {
   border: none;
   padding: 1.5rem 1rem;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navMenu {
+    position: fixed;
+    left: -150%;
+    top: 97px;
+    width: 100vw;
+    transition: 0.3s;
+    height: 100vh;
+    background: var(--color-glass);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+
+  .navItem {
+    margin: 5px 25px;
+  }
+
+  .navLink {
+    color: var(--color-fg);
+  }
+
+  .darkModeBtn {
+    margin: 0;
+    font-weight: normal;
+    transition: all var(--global-transition-time) ease-in-out;
+    cursor: pointer;
+    color: var(--color-fg);
+    margin: 0px 25px;
+  }
+
+  main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .excercise:nth-child(1) {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .excercise:nth-child(2) {
+    height: 80vh;
+  }
+
+  .gameBox {
+    width: 85vw;
+  }
+  .gameBtn {
+    padding: 1rem 2.5rem;
+  }
 }
