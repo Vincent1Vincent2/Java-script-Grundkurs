@@ -120,6 +120,10 @@ const optionTexts = [
         nextText: 9,
       },
       {
+        text: "The gray door",
+        nextText: 67,
+      },
+      {
         text: "The green door",
         nextText: 16,
       },
@@ -141,7 +145,7 @@ const optionTexts = [
   },
   {
     id: 6,
-    text: "Look there on the floor, a green key!",
+    text: "Look there on the floor, a green key! And whats that? A note sheet",
     options: [
       {
         text: "Go back",
@@ -151,11 +155,15 @@ const optionTexts = [
   },
   {
     id: 7,
-    text: "Hmmm i wonder where this leads",
+    text: "Hmmm i wonder where this leads and what i could use the note sheet for?",
     options: [
       {
         text: "Blue door",
         nextText: 17,
+      },
+      {
+        text: "Gray door",
+        nextText: 71,
       },
       {
         text: "Green door",
@@ -775,7 +783,7 @@ const optionTexts = [
     options: [
       {
         text: "Go back",
-        nextText: 62,
+        nextText: 63,
       },
     ],
   },
@@ -800,6 +808,10 @@ const optionTexts = [
       {
         text: "Blue door",
         nextText: 39,
+      },
+      {
+        text: "Gray door",
+        nextText: 69,
       },
       {
         text: "Green door",
@@ -834,6 +846,120 @@ const optionTexts = [
       {
         text: "Go back",
         nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 67,
+    text: "I wonder what else's in here",
+    options: [
+      {
+        text: "Check piano",
+        nextText: 68,
+      },
+      {
+        text: "Check the desk",
+        nextText: 61,
+      },
+      {
+        text: "Go back",
+        nextText: 4,
+      },
+    ],
+  },
+  {
+    id: 68,
+    text: "I wish i could play this",
+    options: [
+      {
+        text: "Go back",
+        nextText: 67,
+      },
+    ],
+  },
+  {
+    id: 69,
+    text: "Just the piano left...",
+    options: [
+      {
+        text: "Check piano",
+        nextText: 70,
+      },
+    ],
+  },
+  {
+    id: 70,
+    text: "Still can't play :(",
+    options: [
+      {
+        text: "Go back",
+        nextText: 63,
+      },
+    ],
+  },
+  {
+    id: 71,
+    text: "I wonder what more this room hold",
+    options: [
+      {
+        text: "Check piano",
+        nextText: 72,
+      },
+      {
+        text: "Check the desk",
+        nextText: 74,
+      },
+      {
+        text: "Go back",
+        nextText: 75,
+      },
+    ],
+  },
+  {
+    id: 72,
+    text: "Lets see if i can follow the note sheet i found",
+    options: [
+      {
+        text: "Play piano",
+        nextText: 73,
+      },
+      {
+        text: "Go back",
+        nextText: 71,
+      },
+    ],
+  },
+  {
+    id: 73,
+    text: "Now playing: ",
+    options: [
+      {
+        text: "Go back",
+        nextText: 71,
+      },
+    ],
+  },
+  {
+    id: 74,
+    text: "Oh wow, a blue key, this will come in handy!",
+    options: [
+      {
+        text: "Go back",
+        nextText: 0 / 0,
+      },
+    ],
+  },
+  {
+    id: 75,
+    text: "Now let's see what to do! green key note sheet, bue room locked",
+    options: [
+      {
+        text: "Blue door",
+        nextText: 0 / 0,
+      },
+      {
+        text: "Blue door",
+        nextText: 0 / 0,
       },
     ],
   },
