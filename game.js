@@ -33,8 +33,15 @@ function showOption(option) {
 
 function selectOption(option) {
   const nextQuestTextId = option.nextText;
-  state = Object.assign(state, option.setState);
+
   showQuestText(nextQuestTextId);
+
+  if (option.text === "Check piano") {
+    const pianoSound = document.getElementById("pianoSound");
+    if (pianoSound) {
+      pianoSound.play();
+    }
+  }
 }
 
 const optionTexts = [
@@ -827,4 +834,5 @@ const optionTexts = [
     ],
   },
 ];
+
 startQuest();
