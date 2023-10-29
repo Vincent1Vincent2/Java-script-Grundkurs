@@ -43,19 +43,19 @@ const optionTexts = [
     text: "You've been looked in a house and need to the three keys to get out",
     options: [
       {
-        text: "The red room",
+        text: "The red door",
         nextText: 64,
       },
       {
-        text: "The blue room",
+        text: "The blue door",
         nextText: 65,
       },
       {
-        text: "The gray room",
+        text: "The gray door",
         nextText: 2,
       },
       {
-        text: "The Green room",
+        text: "The Green door",
         nextText: 66,
       },
     ],
@@ -83,16 +83,16 @@ const optionTexts = [
     text: "You found a lockpicking kit!",
     options: [
       {
-        text: "Go back",
-        nextText: 4,
-      },
-      {
         text: "Check piano",
         nextText: 60,
       },
       {
         text: "Check the desk",
         nextText: 61,
+      },
+      {
+        text: "Go back",
+        nextText: 4,
       },
     ],
   },
@@ -101,15 +101,15 @@ const optionTexts = [
     text: "Wonder what door i should open with this lockpick",
     options: [
       {
-        text: "The red room",
+        text: "The red door",
         nextText: 5,
       },
       {
-        text: "The blue room",
+        text: "The blue door",
         nextText: 9,
       },
       {
-        text: "The green room",
+        text: "The green door",
         nextText: 16,
       },
     ],
@@ -119,12 +119,12 @@ const optionTexts = [
     text: "Look, red door wow!",
     options: [
       {
-        text: "Go back",
-        nextText: 4,
-      },
-      {
         text: "Use lockpick",
         nextText: 6,
+      },
+      {
+        text: "Go back",
+        nextText: 4,
       },
     ],
   },
@@ -143,11 +143,11 @@ const optionTexts = [
     text: "Hmmm i wonder where this leads",
     options: [
       {
-        text: "Blue room",
+        text: "Blue door",
         nextText: 17,
       },
       {
-        text: "Green room",
+        text: "Green door",
         nextText: 8,
       },
     ],
@@ -167,12 +167,12 @@ const optionTexts = [
     text: "Look blue door wow",
     options: [
       {
-        text: "Go back",
-        nextText: 4,
-      },
-      {
         text: "Use lockpick",
         nextText: 10,
+      },
+      {
+        text: "Go back",
+        nextText: 4,
       },
     ],
   },
@@ -191,11 +191,11 @@ const optionTexts = [
     text: "Hmmmm i wonder what door this goes to",
     options: [
       {
-        text: "Red room",
+        text: "Red door",
         nextText: 12,
       },
       {
-        text: "Green room",
+        text: "Green door",
         nextText: 15,
       },
     ],
@@ -285,16 +285,16 @@ const optionTexts = [
     text: "Wonder where this key leads",
     options: [
       {
-        text: "Go back",
-        nextText: 21,
-      },
-      {
         text: "Check piano",
         nextText: 30,
       },
       {
         text: "Check bookshelf",
         nextText: 31,
+      },
+      {
+        text: "Go back",
+        nextText: 21,
       },
     ],
   },
