@@ -44,6 +44,14 @@ function showQuestText(textIndex) {
   });
 }
 
+const inventoryItemIDs = [
+  "blueKey",
+  "redKey",
+  "greenKey",
+  "lockPick",
+  "noteSheet",
+];
+
 function selectOption(option) {
   const nextQuestTextId = option.nextText;
 
@@ -60,6 +68,20 @@ function selectOption(option) {
     if (pianoSound) {
       pianoSound.pause();
     }
+  }
+  if (option.setState) {
+    option.setState.forEach((item) => {
+      for (const key in item) {
+        state[key] = item[key];
+      }
+    });
+
+    inventoryItemIDs.forEach((itemID) => {
+      const inventoryItem = document.getElementById(itemID);
+      if (inventoryItem) {
+        inventoryItem.style.display = state[itemID] ? "block" : "none";
+      }
+    });
   }
 }
 
