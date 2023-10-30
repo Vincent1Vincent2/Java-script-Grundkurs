@@ -1,28 +1,8 @@
 const questText = document.getElementById("questText");
 const optionsButtonsContainer = document.getElementById("optionsButtons");
 const inventoryContainer = document.getElementById("inventoryItems");
-const blueKey = document.getElementById("blueKey");
-blueKey.src = "blueKey.png";
-inventoryContainer.appendChild(blueKey);
-const redKey = document.getElementById("redKey");
-redKey.src = "redKey.png";
-inventoryContainer.appendChild(redKey);
-const greenKey = document.getElementById("greenKey");
-greenKey.src = "greenKey.png";
-inventoryContainer.appendChild(greenKey);
-const lockPick = document.getElementById("lockPick");
-lockPick.src = "lockPickKit.png";
-inventoryContainer.appendChild(lockPick);
-const noteSheet = document.getElementById("noteSheet");
-noteSheet.src = "noteSheet.png";
-inventoryContainer.appendChild(noteSheet);
-
-const inventory = [{ id: blueKey }];
-
-let state = {};
 
 function startQuest() {
-  state = {};
   showQuestText(1);
 }
 
@@ -35,7 +15,7 @@ function showQuestText(textIndex) {
     optionsButtonsContainer.removeChild(optionsButtonsContainer.firstChild);
   }
   optionText.options.forEach((option) => {
-    if (showOption(option)) {
+    {
       const button = document.createElement("button");
       button.innerText = option.text;
       button.classList.add("gameBtn");
@@ -43,10 +23,6 @@ function showQuestText(textIndex) {
       optionsButtonsContainer.appendChild(button);
     }
   });
-}
-
-function showOption(option) {
-  return option.requierdState == null || option.requierdState(state);
 }
 
 function selectOption(option) {
@@ -71,8 +47,8 @@ function selectOption(option) {
 const optionTexts = [
   {
     id: 1,
+    iD: 1,
     text: "You've been looked in a house and need to the three keys to get out",
-    inventory: [blueKey],
     options: [
       {
         text: "The red door",
@@ -1684,7 +1660,7 @@ const optionTexts = [
   },
   {
     id: 132,
-    text: "green key have played no blue",
+    text: "Now let's see where this green key goes",
     options: [
       {
         text: "Gray door",
@@ -1814,4 +1790,4 @@ const optionTexts = [
   },
 ];
 
-startQuest();
+startQuest(); // Start the game
