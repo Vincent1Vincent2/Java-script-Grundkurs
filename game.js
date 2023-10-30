@@ -493,7 +493,7 @@ const optionTexts = [
   },
   {
     id: 34,
-    text: "It worked! And there, a green key!",
+    text: "It worked! And there, a green key and note sheet",
     options: [
       {
         text: "Go back",
@@ -508,6 +508,10 @@ const optionTexts = [
       {
         text: "Blue door",
         nextText: 37,
+      },
+      {
+        text: "Gray door",
+        nextText: 135,
       },
       {
         text: "Green door",
@@ -1688,6 +1692,98 @@ const optionTexts = [
       {
         text: "Go back",
         nextText: 50,
+      },
+    ],
+  },
+  {
+    id: 135,
+    text: "Just the piano here now.",
+    options: [
+      {
+        text: "Check piano",
+        nextText: 136,
+      },
+      {
+        text: "Go back",
+        nextText: 35,
+      },
+    ],
+  },
+  {
+    id: 136,
+    text: "I could probebly follow the note sheet",
+    options: [
+      {
+        text: "Play piano",
+        nextText: 137,
+      },
+      {
+        text: "Go back",
+        nextText: 35,
+      },
+    ],
+  },
+  {
+    id: 137,
+    text: "Now playing:",
+    options: [
+      {
+        text: "Go back",
+        nextText: 138,
+      },
+    ],
+  },
+  {
+    id: 138,
+    text: "Just the keys left now",
+    options: [
+      {
+        text: "Blue door",
+        nextText: 139,
+      },
+      {
+        text: "Green door",
+        nextText: 142,
+      },
+    ],
+  },
+  {
+    id: 139,
+    text: "Oh, a red key. Too bad i've already been there.",
+    options: [
+      {
+        text: "Go back",
+        nextText: 140,
+      },
+    ],
+  },
+  {
+    id: 140,
+    text: "Only one way out now.",
+    options: [
+      {
+        text: "Green door",
+        nextText: 141,
+      },
+    ],
+  },
+  {
+    id: 141,
+    text: "Yes i made it!",
+    options: [
+      {
+        text: "Restart",
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 142,
+    text: "Yes i made it!",
+    options: [
+      {
+        text: "Restart",
+        nextText: 1,
       },
     ],
   },
