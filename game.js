@@ -1,6 +1,25 @@
 const questText = document.getElementById("questText");
 const optionsButtonsContainer = document.getElementById("optionsButtons");
 const inventoryContainer = document.getElementById("inventoryItems");
+const blueKey = document.getElementById("blueKey");
+const redKey = document.getElementById("redKey");
+const greenKey = document.getElementById("greenKey");
+const lockPick = document.getElementById("lockPick");
+const noteSheet = document.getElementById("noteSheet");
+
+blueKey.style.display = "none";
+redKey.style.display = "none";
+greenKey.style.display = "none";
+lockPick.style.display = "none";
+noteSheet.style.display = "none";
+
+let state = {
+  blueKey: false,
+  redKey: false,
+  greenKey: false,
+  lockPick: false,
+  noteSheet: false,
+};
 
 function startQuest() {
   showQuestText(1);
@@ -47,7 +66,6 @@ function selectOption(option) {
 const optionTexts = [
   {
     id: 1,
-    iD: 1,
     text: "You've been looked in a house and need to the three keys to get out",
     options: [
       {
