@@ -194,6 +194,9 @@ body.active {
 }
 
 .gameBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50vw;
   background-color: var(--color-sec);
   padding: 0 7rem;
@@ -236,10 +239,11 @@ body.active {
 }
 
 .inventoryTitle {
-  font-size: clamp(1.2rem, -5.6875rem + 10vw, 2.25rem);
+  font-size: clamp(1.5rem, -5.6875rem + 10vw, 2.25rem);
 }
 
 .inventoryItems {
+  width: 37vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,5 +316,8 @@ body.active {
   }
   .gameBtn {
     padding: 1rem 2.5rem;
+  }
+  .inventoryContainer {
+    width: 70vw;
   }
 }
