@@ -1,5 +1,23 @@
 const questText = document.getElementById("questText");
 const optionsButtonsContainer = document.getElementById("optionsButtons");
+const inventoryContainer = document.getElementById("inventoryItems");
+const blueKey = document.getElementById("blueKey");
+blueKey.src = "blueKey.png";
+inventoryContainer.appendChild(blueKey);
+const redKey = document.getElementById("redKey");
+redKey.src = "redKey.png";
+inventoryContainer.appendChild(redKey);
+const greenKey = document.getElementById("greenKey");
+greenKey.src = "greenKey.png";
+inventoryContainer.appendChild(greenKey);
+const lockPick = document.getElementById("lockPick");
+lockPick.src = "lockPickKit.png";
+inventoryContainer.appendChild(lockPick);
+const noteSheet = document.getElementById("noteSheet");
+noteSheet.src = "noteSheet.png";
+inventoryContainer.appendChild(noteSheet);
+
+const inventory = [{ id: blueKey }];
 
 let state = {};
 
@@ -42,12 +60,19 @@ function selectOption(option) {
       pianoSound.play();
     }
   }
+  if (option.text === "Go back") {
+    const pianoSound = document.getElementById("pianoSound");
+    if (pianoSound) {
+      pianoSound.pause();
+    }
+  }
 }
 
 const optionTexts = [
   {
     id: 1,
     text: "You've been looked in a house and need to the three keys to get out",
+    inventory: [blueKey],
     options: [
       {
         text: "The red door",

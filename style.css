@@ -197,7 +197,7 @@ body.active {
   width: 50vw;
   background-color: var(--color-sec);
   padding: 0 7rem;
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
   padding-top: 2rem;
   border-radius: 20px;
   box-shadow: 5px 5px 5px var(--color-fg);
@@ -223,6 +223,28 @@ body.active {
   border: none;
   padding: 1.5rem 1rem;
   border-radius: 5px;
+}
+
+.inventoryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
+  padding: 0.85rem;
+  background-color: var(--color-glass);
+}
+
+.inventoryTitle {
+  font-size: clamp(1.2rem, -5.6875rem + 10vw, 2.25rem);
+}
+
+.inventoryItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
 }
 
 @media (max-width: 768px) {
