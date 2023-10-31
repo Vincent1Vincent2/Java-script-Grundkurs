@@ -103,7 +103,7 @@ const optionTexts = [
         nextText: 2,
       },
       {
-        text: "The Green door",
+        text: "The green door",
         nextText: 66,
       },
     ],
@@ -119,10 +119,12 @@ const optionTexts = [
       {
         text: "Check bookshelf",
         nextText: 3,
+        setState: [{ lockPick: true }],
       },
       {
         text: "Check desk",
         nextText: 19,
+        setState: [{ blueKey: true }],
       },
       {
         text: "Go back",
@@ -141,6 +143,7 @@ const optionTexts = [
       {
         text: "Check the desk",
         nextText: 61,
+        setState: [{ blueKey: true }],
       },
       {
         text: "Go back",
@@ -177,6 +180,11 @@ const optionTexts = [
       {
         text: "Use lockpick",
         nextText: 6,
+        setState: [
+          { lockPick: false },
+          { greenKey: true },
+          { noteSheet: true },
+        ],
       },
       {
         text: "Go back",
@@ -209,6 +217,7 @@ const optionTexts = [
       {
         text: "Green door",
         nextText: 8,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -229,6 +238,7 @@ const optionTexts = [
       {
         text: "Use lockpick",
         nextText: 10,
+        setState: [{ lockPick: false }, { redKey: true }],
       },
       {
         text: "Go back",
@@ -253,6 +263,7 @@ const optionTexts = [
       {
         text: "Red door",
         nextText: 12,
+        setState: [{ redKey: false }, { greenKey: true }, { noteSheet: true }],
       },
       {
         text: "Gray door",
@@ -285,6 +296,7 @@ const optionTexts = [
       {
         text: "Green door",
         nextText: 14,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -295,6 +307,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ noteSheet: false }],
       },
     ],
   },
@@ -315,6 +328,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ lockPick: false }],
       },
     ],
   },
@@ -359,6 +373,7 @@ const optionTexts = [
       {
         text: "Check bookshelf",
         nextText: 31,
+        setState: [{ lockPick: true }],
       },
       {
         text: "Go back",
@@ -377,6 +392,7 @@ const optionTexts = [
       {
         text: "Blue door",
         nextText: 22,
+        setState: [{ blueKey: false }, { redKey: true }],
       },
       {
         text: "Gray door",
@@ -405,6 +421,7 @@ const optionTexts = [
       {
         text: "Red door",
         nextText: 24,
+        setState: [{ redKey: false }, { greenKey: true }, { noteSheet: true }],
       },
       {
         text: "Gray door",
@@ -437,6 +454,7 @@ const optionTexts = [
       {
         text: "Green door",
         nextText: 26,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -447,6 +465,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ noteSheet: false }],
       },
     ],
   },
@@ -525,6 +544,7 @@ const optionTexts = [
       {
         text: "Use lookpick",
         nextText: 34,
+        setState: [{ lockPick: false }],
       },
       {
         text: "Go back",
@@ -549,6 +569,7 @@ const optionTexts = [
       {
         text: "Blue door",
         nextText: 37,
+        setState: [{ blueKey: false }, { redKey: true }],
       },
       {
         text: "Gray door",
@@ -557,6 +578,7 @@ const optionTexts = [
       {
         text: "Green door",
         nextText: 36,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -567,6 +589,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ blueKey: false }, { redKey: false }],
       },
     ],
   },
@@ -587,6 +610,7 @@ const optionTexts = [
       {
         text: "Green door",
         nextText: 36,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -597,10 +621,12 @@ const optionTexts = [
       {
         text: "Use lockpick",
         nextText: 40,
+        setState: [{ lockPick: false }, { redKey: true }],
       },
       {
         text: "Use blue key",
         nextText: 45,
+        setState: [{ blueKey: false }, { redKey: true }],
       },
       {
         text: "Go back",
@@ -620,11 +646,16 @@ const optionTexts = [
   },
   {
     id: 41,
-    text: "Only two doors left, i got a blue and red key now",
+    text: "Three doors left, i got a blue and red key now",
     options: [
       {
         text: "Red door",
         nextText: 42,
+        setState: [{ redKey: false }, { greenKey: true }, { noteSheet: true }],
+      },
+      {
+        text: "Gray door",
+        nextText: 0 / 0,
       },
       {
         text: "Green door",
@@ -634,7 +665,7 @@ const optionTexts = [
   },
   {
     id: 42,
-    text: "Wow look at that, the key fits, and on the floor. A green key!",
+    text: "Wow look at that, the key fits, and on the floor. A green key a note sheet",
     options: [
       {
         text: "Go back",
@@ -646,9 +677,11 @@ const optionTexts = [
     id: 43,
     text: "I should be close to getting out now",
     options: [
+      { text: "Gray door", nextText: 0 / 0 },
       {
         text: "Green door",
         nextText: 44,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -659,6 +692,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ blueKey: false }, { noteSheet: false }],
       },
     ],
   },
@@ -697,10 +731,16 @@ const optionTexts = [
       {
         text: "Use red key",
         nextText: 48,
+        setState: [{ redKey: false }, { greenKey: true }, { noteSheet: true }],
       },
       {
         text: "Use lockpick",
         nextText: 54,
+        setState: [
+          { lockPick: false },
+          { greenKey: true },
+          { noteSheet: true },
+        ],
       },
     ],
   },
@@ -735,10 +775,12 @@ const optionTexts = [
       {
         text: "Use green key",
         nextText: 51,
+        setState: [{ greenKey: false }],
       },
       {
         text: "Use lockpick",
-        nextText: 51,
+        nextText: 0 / 0,
+        setState: [{ lockPick: false }],
       },
     ],
   },
@@ -749,6 +791,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ noteSheet: false }, { lockPick: false }],
       },
     ],
   },
@@ -759,6 +802,7 @@ const optionTexts = [
       {
         text: "Use lookpick",
         nextText: 53,
+        setState: [{ lockPick: false }],
       },
       {
         text: "Go back",
@@ -773,12 +817,13 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ redKey: false }],
       },
     ],
   },
   {
     id: 54,
-    text: "Got it open! And theres a green key!",
+    text: "Got it open! And theres a green key plus a note sheet",
     options: [
       {
         text: "Go back",
@@ -791,8 +836,13 @@ const optionTexts = [
     text: "Now i just got the green door left!",
     options: [
       {
+        text: "Gray door",
+        nextText: 0 / 0,
+      },
+      {
         text: "Green door",
         nextText: 56,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -803,6 +853,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ redKey: false }, { noteSheet: false }],
       },
     ],
   },
@@ -823,6 +874,7 @@ const optionTexts = [
       {
         text: "Use lockpick",
         nextText: 59,
+        setState: [{ lockPick: false }],
       },
       {
         text: "Go back",
@@ -837,6 +889,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ blueKey: false }],
       },
     ],
   },
@@ -852,7 +905,7 @@ const optionTexts = [
   },
   {
     id: 61,
-    text: "This is an old oak desk, look in the drawer a blue key!",
+    text: "It's an old oak desk and look in the drawer a blue key!",
     options: [
       {
         text: "Go back",
@@ -933,6 +986,7 @@ const optionTexts = [
       {
         text: "Check the desk",
         nextText: 61,
+        setState: [{ blueKey: true }],
       },
       {
         text: "Go back",
@@ -981,6 +1035,7 @@ const optionTexts = [
       {
         text: "Check the desk",
         nextText: 74,
+        setState: [{ blueKey: true }],
       },
       {
         text: "Go back",
@@ -995,6 +1050,7 @@ const optionTexts = [
       {
         text: "Play piano",
         nextText: 73,
+        setState: [{ noteSheet: false }],
       },
       {
         text: "Go back",
@@ -1037,6 +1093,7 @@ const optionTexts = [
       {
         text: "Green door",
         nextText: 102,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -1061,6 +1118,7 @@ const optionTexts = [
       {
         text: "Check desk",
         nextText: 80,
+        setState: [{ blueKey: true }],
       },
       {
         text: "Go back",
@@ -1075,6 +1133,7 @@ const optionTexts = [
       {
         text: "Play piano",
         nextText: 79,
+        setState: [{ noteSheet: false }],
       },
       {
         text: "Go back",
@@ -1109,16 +1168,22 @@ const optionTexts = [
       {
         text: "Blue door",
         nextText: 82,
+        setState: [{ blueKey: false }, { redKey: true }],
+      },
+      {
+        text: "Gray door",
+        nextText: 0 / 0,
       },
       {
         text: "Green door",
         nextText: 101,
+        setState: [{ greenKey: false }],
       },
     ],
   },
   {
     id: 82,
-    text: "There's a red key, but  i've already been there...",
+    text: "There's a red key, but i've already been there...",
     options: [
       {
         text: "Go back",
@@ -1153,6 +1218,7 @@ const optionTexts = [
       {
         text: "Blue door",
         nextText: 86,
+        setState: [{ blueKey: false }, { redKey: true }],
       },
       {
         text: "Gray door",
@@ -1161,6 +1227,7 @@ const optionTexts = [
       {
         text: "Green door",
         nextText: 100,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -1253,6 +1320,7 @@ const optionTexts = [
       {
         text: "Play piano",
         nextText: 94,
+        setState: [{ noteSheet: false }],
       },
     ],
   },
@@ -1273,10 +1341,12 @@ const optionTexts = [
       {
         text: "Blue door",
         nextText: 96,
+        setState: [{ blueKey: false }, { redKey: true }],
       },
       {
         text: "Green door",
         nextText: 99,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -1297,6 +1367,7 @@ const optionTexts = [
       {
         text: "Green door",
         nextText: 98,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -1307,6 +1378,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ redKeyKey: false }],
       },
     ],
   },
@@ -1317,6 +1389,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ blueKey: false }],
       },
     ],
   },
@@ -1327,6 +1400,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ blueKey: false }, { noteSheet: false }],
       },
     ],
   },
@@ -1337,6 +1411,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ blueKey: false }, { noteSheet: false }],
       },
     ],
   },
@@ -1347,6 +1422,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ noteSheet: false }],
       },
     ],
   },
@@ -1391,6 +1467,7 @@ const optionTexts = [
       {
         text: "Play piano",
         nextText: 107,
+        setState: [{ noteSheet: false }],
       },
       {
         text: "Go back",
@@ -1415,6 +1492,7 @@ const optionTexts = [
       {
         text: "Green door",
         nextText: 108,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -1439,6 +1517,7 @@ const optionTexts = [
       {
         text: "Check bookshelf",
         nextText: 111,
+        setState: [{ lockPick: true }],
       },
       {
         text: "Go back",
@@ -1503,6 +1582,7 @@ const optionTexts = [
       {
         text: "Play piano",
         nextText: 116,
+        setState: [{ noteSheet: false }],
       },
     ],
   },
@@ -1533,10 +1613,12 @@ const optionTexts = [
       {
         text: "Use lockpick",
         nextText: 119,
+        setState: [{ lockPick: false }],
       },
       {
         text: "Use key",
-        nextText: 119,
+        nextText: 0 / 0,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -1547,6 +1629,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -1561,6 +1644,7 @@ const optionTexts = [
       {
         text: "Check bookshelf",
         nextText: 126,
+        setState: [{ lockPick: true }],
       },
       {
         text: "Go back",
@@ -1575,6 +1659,7 @@ const optionTexts = [
       {
         text: "Play piano",
         nextText: 122,
+        setState: [{ noteSheet: false }],
       },
       {
         text: "Go back",
@@ -1599,6 +1684,7 @@ const optionTexts = [
       {
         text: "Check bookshelf",
         nextText: 124,
+        setState: [{ lockPick: true }],
       },
       {
         text: "Go back",
@@ -1657,6 +1743,7 @@ const optionTexts = [
       {
         text: "Play piano",
         nextText: 129,
+        setState: [{ noteSheet: false }],
       },
       {
         text: "Go back",
@@ -1684,7 +1771,7 @@ const optionTexts = [
       },
       {
         text: "Green door",
-        nextText: 51,
+        nextText: 0 / 0,
       },
     ],
   },
@@ -1694,7 +1781,7 @@ const optionTexts = [
     options: [
       {
         text: "Green door",
-        nextText: 51,
+        nextText: 0 / 0,
       },
     ],
   },
@@ -1708,7 +1795,7 @@ const optionTexts = [
       },
       {
         text: "Green door",
-        nextText: 51,
+        nextText: 0 / 0,
       },
     ],
   },
@@ -1719,6 +1806,7 @@ const optionTexts = [
       {
         text: "Check bookshelf",
         nextText: 134,
+        setState: [{ lockPick: true }],
       },
       {
         text: "Go back",
@@ -1732,7 +1820,7 @@ const optionTexts = [
     options: [
       {
         text: "Go back",
-        nextText: 50,
+        nextText: 0 / 0,
       },
     ],
   },
@@ -1757,6 +1845,7 @@ const optionTexts = [
       {
         text: "Play piano",
         nextText: 137,
+        setState: [{ noteSheet: false }],
       },
       {
         text: "Go back",
@@ -1781,10 +1870,12 @@ const optionTexts = [
       {
         text: "Blue door",
         nextText: 139,
+        setState: [{ blueKey: false }, { redKey: true }],
       },
       {
         text: "Green door",
         nextText: 142,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -1805,6 +1896,7 @@ const optionTexts = [
       {
         text: "Green door",
         nextText: 141,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -1815,6 +1907,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ redKey: false }],
       },
     ],
   },
@@ -1825,6 +1918,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ blueKey: false }],
       },
     ],
   },
