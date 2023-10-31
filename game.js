@@ -1296,6 +1296,7 @@ const optionTexts = [
       {
         text: "Play piano",
         nextText: 90,
+        setState: [{ noteSheet: false }],
       },
       {
         text: "Go back",
@@ -1309,7 +1310,18 @@ const optionTexts = [
     options: [
       {
         text: "Go back",
-        nextText: 87,
+        nextText: 90.1,
+      },
+    ],
+  },
+  {
+    id: 90.1,
+    text: "Guess theres one way out! ",
+    options: [
+      {
+        text: "Green door",
+        nextText: 91,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -1332,6 +1344,10 @@ const optionTexts = [
         text: "Check piano",
         nextText: 93,
       },
+      {
+        text: "Go back",
+        nextText: 85,
+      },
     ],
   },
   {
@@ -1342,6 +1358,10 @@ const optionTexts = [
         text: "Play piano",
         nextText: 94,
         setState: [{ noteSheet: false }],
+      },
+      {
+        text: "Go back",
+        nextText: 92,
       },
     ],
   },
