@@ -10,6 +10,7 @@
   --color-fg: #000000;
   --color-ac: #0205cc;
   --color-sec: #f0f0f0;
+  --color-sec2: #f0f0f0;
   --color-glass: rgba(255, 255, 255, 0.31);
 }
 
@@ -18,6 +19,8 @@
   --color-fg: #ffffff;
   --color-ac: #0205cc;
   --color-sec: #0c0c0c;
+  --color-sec2: rgba(141, 141, 141, 0.527);
+  --color-glass: rgba(141, 141, 141, 0.527);
 }
 
 body {
@@ -194,21 +197,22 @@ body.active {
 }
 
 .gameBox {
+  height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50vw;
-  background-color: var(--color-sec);
+  background-color: var(--color-sec2);
   padding: 0 7rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px var(--color-fg);
 }
 
 #questText {
-  font-size: clamp(2.2rem, -5.6875rem + 10vw, 3.25rem);
+  font-size: clamp(1.85rem, -5.6875rem + 10vw, 3.25rem);
   margin-bottom: 3rem;
+  width: 45vw;
   color: var(--color-fg);
 }
 
@@ -217,11 +221,12 @@ body.active {
   grid-template-columns: auto auto;
   gap: 1rem;
   justify-content: center;
+  width: 45vw;
 }
 
 .gameBtn {
-  font-size: clamp(2.2rem, -5.6875rem + 10vw, 3.25rem);
-  background-color: var(--color-bg);
+  font-size: clamp(1.5rem, -5.6875rem + 10vw, 3.25rem);
+  background-color: var(--color-glass);
   color: var(--color-fg);
   border: none;
   padding: 1.5rem 1rem;
@@ -229,6 +234,7 @@ body.active {
 }
 
 .inventoryContainer {
+  width: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,14 +242,15 @@ body.active {
   margin: 2rem 0;
   padding: 0.85rem;
   background-color: var(--color-glass);
+  border-radius: 10px;
 }
 
 .inventoryTitle {
   font-size: clamp(1.5rem, -5.6875rem + 10vw, 2.25rem);
+  margin-top: 1rem;
 }
 
 .inventoryItems {
-  width: 37vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,7 +258,7 @@ body.active {
   padding: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1008px) {
   .hamburger {
     display: block;
   }
@@ -311,13 +318,45 @@ body.active {
     height: 80vh;
   }
 
+  .gameSection {
+    height: 120vh;
+  }
+
   .gameBox {
     width: 85vw;
+    height: 75vh;
   }
+
+  #questText {
+    width: 80vw;
+  }
+
+  .buttonGrid {
+    width: 75vw;
+  }
+
   .gameBtn {
-    padding: 1rem 2.5rem;
+    padding: 0.85rem 2rem;
   }
   .inventoryContainer {
-    width: 70vw;
+    width: 75vw;
+  }
+}
+
+@media (width: 375px) {
+  .gameSection {
+    height: 125vh;
+  }
+
+  .gameBox {
+    height: 95vh;
+  }
+
+  .inventoryTitle {
+    margin-top: 2rem;
+  }
+
+  .inventoryContainer {
+    height: 25vh;
   }
 }

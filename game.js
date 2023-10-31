@@ -223,11 +223,12 @@ const optionTexts = [
   },
   {
     id: 8,
-    text: "You have opend the green door and escaped!",
+    text: "I escaped!",
     options: [
       {
         text: "Restart",
         nextText: 1,
+        setState: [{ noteSheet: false }],
       },
     ],
   },
@@ -1217,6 +1218,7 @@ const optionTexts = [
       {
         text: "Green door",
         nextText: 84,
+        setState: [{ greenKey: false }],
       },
     ],
   },
@@ -2005,6 +2007,10 @@ const optionTexts = [
         text: "Check piano",
         nextText: 144,
       },
+      {
+        text: "Go back",
+        nextText: 55,
+      },
     ],
   },
   {
@@ -2015,6 +2021,10 @@ const optionTexts = [
         text: "Play piano",
         nextText: 145,
         setState: [{ noteSheet: false }],
+      },
+      {
+        text: "Go back",
+        nextText: 143,
       },
     ],
   },
