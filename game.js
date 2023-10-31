@@ -1069,7 +1069,7 @@ const optionTexts = [
   },
   {
     id: 72,
-    text: "Lets see if i can follow the note sheet i found",
+    text: "Lets see if i can follow the note sheet i found", //note sheet, green (lockpick used) no blue key
     options: [
       {
         text: "Play piano",
@@ -1078,20 +1078,21 @@ const optionTexts = [
       },
       {
         text: "Go back",
-        nextText: 71,
+        nextText: 72,
       },
     ],
   },
   {
     id: 73,
-    text: "Now playing: ",
+    text: "Now playing: ", //green (lockpick, note sheet used) no blue key
     options: [
       {
         text: "Go back",
-        nextText: 71,
+        nextText: 158,
       },
     ],
   },
+
   {
     id: 74,
     text: "Oh wow, a blue key, this will come in handy!",
@@ -1421,7 +1422,7 @@ const optionTexts = [
       {
         text: "Restart",
         nextText: 1,
-        setState: [{ redKeyKey: false }],
+        setState: [{ redKey: false }],
       },
     ],
   },
@@ -1491,11 +1492,16 @@ const optionTexts = [
   },
   {
     id: 105,
-    text: "Go the note sheet, now let's check out the piano",
+    text: "Got the note sheet, now let's check out the piano", //notesheet green (red, lockpick used ) no blue
     options: [
       {
         text: "Check piano",
         nextText: 106,
+      },
+      {
+        text: "Check desk",
+        nextText: 168,
+        setState: [{ blueKey: true }],
       },
       {
         text: "Go back",
@@ -1524,18 +1530,7 @@ const optionTexts = [
     options: [
       {
         text: "Go back",
-        nextText: 108,
-      },
-    ],
-  },
-  {
-    id: 107,
-    text: "Only one door left",
-    options: [
-      {
-        text: "Green door",
-        nextText: 108,
-        setState: [{ greenKey: false }],
+        nextText: 107.1,
       },
     ],
   },
@@ -2175,6 +2170,316 @@ const optionTexts = [
       },
     ],
   },
+  {
+    id: 158,
+    text: "Only the desk left then!", //green (lockpick, note sheet used) no blue key
+    options: [
+      {
+        text: "Check desk",
+        nextText: 159,
+        setState: [{ blueKey: true }],
+      },
+      {
+        text: "Go back",
+        nextText: 164,
+      },
+    ],
+  },
+  {
+    id: 159,
+    text: "Oh a blue key, nice!", //green blue (lockpick, note sheet used)
+    options: [
+      {
+        text: "Go back",
+        nextText: 160,
+      },
+    ],
+  },
+  {
+    id: 160,
+    text: "Let's get out of here", //green blue (lockpick, note sheet used)
+    options: [
+      {
+        text: "Blue door",
+        nextText: 161,
+        setState: [{ blueKey: false }, { redKey: true }],
+      },
+      {
+        text: "Green door",
+        nextText: 167,
+        setState: [{ greenKey: false }],
+      },
+    ],
+  },
+  {
+    id: 161,
+    text: "Only the red key but i've alredy been there ", //green (lockpick, note sheet, blue used)
+    options: [
+      {
+        text: "Go back",
+        nextText: 162,
+      },
+    ],
+  },
+  {
+    id: 162,
+    text: "One door til freedome ", //green (lockpick, note sheet, blue used)
+    options: [
+      {
+        text: "Green door",
+        nextText: 163,
+        setState: [{ greenKey: false }],
+      },
+    ],
+  },
+  {
+    id: 163,
+    text: "Yes i made it!", //(lockpick, note sheet, blue, green used)
+    options: [
+      {
+        text: "Restart",
+        nextText: 1,
+        setState: [{ redKey: false }],
+      },
+    ],
+  },
+  {
+    id: 164,
+    text: "Let's see what to do", //green (lockpick, note sheet used) no blue key
+    options: [
+      {
+        text: "Blue room",
+        nextText: 165,
+      },
+      {
+        text: "Gray room",
+        nextText: 158,
+      },
+      {
+        text: "Green room",
+        nextText: 166,
+        setState: [{ greenKey: false }],
+      },
+    ],
+  },
+  {
+    id: 165,
+    text: "This door is locked, i need the blue key", //green (lockpick, note sheet used) no blue key
+    options: [
+      {
+        text: "Go back",
+        nextText: 164,
+      },
+    ],
+  },
+  {
+    id: 166,
+    text: "I made it out!", //green (lockpick, note sheet used) no blue key
+    options: [
+      {
+        text: "Restart",
+        nextText: 1,
+      },
+    ],
+  },
+  {
+    id: 167,
+    text: "I made it out!", //(lockpick, note sheet, green used)  blue key
+    options: [
+      {
+        text: "Restart",
+        nextText: 1,
+        setState: [{ blueKey: false }],
+      },
+    ],
+  },
+  {
+    id: 168,
+    text: "Nice, there's a blue key", //blue notesheet green (red, lockpick used )
+    options: [
+      {
+        text: "Go back",
+        nextText: 169,
+      },
+    ],
+  },
+  {
+    id: 169,
+    text: "So many options, what to choose..", //blue notesheet green (red, lockpick used )
+    options: [
+      {
+        text: "Blue door",
+        nextText: 170,
+        setState: [{ blueKey: false }, { redKey: true }],
+      },
+      {
+        text: "Gray door",
+        nextText: 177,
+      },
+      {
+        text: "Green door",
+        nextText: 183,
+        setState: [{ greenKeyKey: false }],
+      },
+    ],
+  },
+  {
+    id: 170,
+    text: "Only a red key in here", //red notesheet green (red, lockpick used )
+    options: [
+      {
+        text: "Go back",
+        nextText: 171,
+      },
+    ],
+  },
+  {
+    id: 171,
+    text: "Hmmm what to do, what to do?", //red notesheet green (red, lockpick used )
+    options: [
+      {
+        text: "Gray door",
+        nextText: 172,
+      },
+      {
+        text: "Green door",
+        nextText: 183,
+        setState: [{ greenKey: false }],
+      },
+    ],
+  },
+  {
+    id: 172,
+    text: "Only the piano in here now", //red notesheet green (red, lockpick used )
+    options: [
+      {
+        text: "Check piano",
+        nextText: 173,
+      },
+    ],
+  },
+  {
+    id: 173,
+    text: "Let's see if i can follow this sheet", //red notesheet green (red, lockpick used )
+    options: [
+      {
+        text: "Play piano",
+        nextText: 174,
+        setState: [{ noteSheet: false }],
+      },
+    ],
+  },
+  {
+    id: 174,
+    text: "Now playing:", //red green (red, lockpick notesheet used )
+    options: [
+      {
+        text: "Go back",
+        nextText: 175,
+      },
+    ],
+  },
+  {
+    id: 175,
+    text: "Only one way out now!", //red green (red, lockpick notesheet used )
+    options: [
+      {
+        text: "Green door",
+        nextText: 176,
+        setState: [{ greenKey: false }],
+      },
+    ],
+  },
+  {
+    id: 176,
+    text: "Yes i made it!", //red (red, lockpick, notesheet, green used )
+    options: [
+      {
+        text: "Restat",
+        nextText: 1,
+        setState: [{ redKey: false }],
+      },
+    ],
+  },
+  {
+    id: 177,
+    text: "Only the piano here now...", //blue notesheet green (red, lockpick used )
+    options: [
+      {
+        text: "Check piano",
+        nextText: 178,
+      },
+    ],
+  },
+  {
+    id: 178,
+    text: "Let's see if i can follow this sheet", //blue green (red, lockpick, notesheet used )
+    options: [
+      {
+        text: "Play piano",
+        nextText: 179,
+        setState: [{ noteSheet: false }],
+      },
+    ],
+  },
+  {
+    id: 179,
+    text: "Now playing:", //blue green (red, lockpick, notesheet used )
+    options: [
+      {
+        text: "Go back",
+        nextText: 180,
+      },
+    ],
+  },
+  {
+    id: 180,
+    text: "Only two doors left now", //blue green (red, lockpick, notesheet used )
+    options: [
+      {
+        text: "Blue door",
+        nextText: 181,
+        setState: [{ blueKey: false }],
+      },
+      {
+        text: "Green door",
+        nextText: 183,
+        setState: [{ greenKey: false }],
+      },
+    ],
+  },
+  {
+    id: 181,
+    text: "Just the red key here, too bad i've already been there ", // green (red, lockpick, notesheet, blue used )
+    options: [
+      {
+        text: "Go back",
+        nextText: 182,
+      },
+    ],
+  },
+  {
+    id: 182,
+    text: "Just one way out now", //green (red, lockpick, notesheet, blue used )
+    options: [
+      {
+        text: "Green key",
+        nextText: 183,
+        setState: [{ greenKey: false }],
+      },
+    ],
+  },
+  {
+    id: 183,
+    text: "Finally out!", // (red, lockpick, notesheet, blue, green used )
+    options: [
+      {
+        text: "Restart",
+        nextText: 1,
+        setState: [{ blueKey: false }, { redKey: false }, { noteSheet: false }],
+      },
+    ],
+  },
 ];
 
-startQuest(); // Start the game
+startQuest();
