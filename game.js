@@ -1526,11 +1526,11 @@ const optionTexts = [
   },
   {
     id: 107,
-    text: "Now playing: ",
+    text: "Now playing: ", //green (red, lockpick, green used ) no blue
     options: [
       {
         text: "Go back",
-        nextText: 107.1,
+        nextText: 158,
       },
     ],
   },

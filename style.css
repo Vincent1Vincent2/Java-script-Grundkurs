@@ -193,11 +193,11 @@ body.active {
 
 .gameSectionTitle {
   font-size: clamp(2.2rem, -5.6875rem + 10vw, 4.25rem);
-  padding: 5rem;
+  padding: 3rem;
 }
 
 .gameBox {
-  height: 85vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
