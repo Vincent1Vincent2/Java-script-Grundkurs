@@ -21,7 +21,7 @@ The button is just a simple button that changes the text.
 
 ### This section has a button based game in it.
 
-The game has 66 options and you can get diffrent endings depending on what your desions take.
+The game has 183 options and you can get diffrent endings depending on what your desions take.
 
 ### The lore:
 

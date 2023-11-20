@@ -30,9 +30,8 @@ function showQuestText(textIndex) {
     (optionText) => optionText.id === textIndex
   );
   questText.innerText = optionText.text;
-  while (optionsButtonsContainer.firstChild) {
-    optionsButtonsContainer.removeChild(optionsButtonsContainer.firstChild);
-  }
+  optionsButtonsContainer.innerHTML = "";
+
   optionText.options.forEach((option) => {
     {
       const button = document.createElement("button");
@@ -91,6 +90,7 @@ const optionTexts = [
     text: "You've been looked in a house and need to the three keys to get out",
     options: [
       {
+        
         text: "The red door",
         nextText: 64,
       },
